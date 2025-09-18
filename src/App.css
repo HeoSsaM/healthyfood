@@ -1,38 +1,254 @@
-.App {
+:root {
+  --color-base: rgba(0,0,0,0.8);
+  --muted: #6b7280;
+  --brand1: #8EB486;
+  --brand2: #997C70;
+  --brand3: #685752;
+  --brand4: #59AC77;
+  --brand5: #3A6F43;
+  --highlight: #CD5C08;
+  --bg-base: #FFF5E4;
+  --radius: 15px;
+  --shadow: 0 6px 20px rgba(0,0,0,.08);
+  --font-h2: 'GMarketSans';
+  --white: #fff
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* header */
+header .top-area {
+  display: flex;
+  padding: 0 3%;
+  display: grid;
+  align-items: center ;
+  grid-template-columns: 2.5fr 1fr 1fr;
+}
+header .logo {
+  font-family: var(--font-h2);
+  font-size: 20px;
+  text-align: left;
+  padding: 10px 0;
+}
+header .logo img {
+  max-width: 30px;
+  vertical-align: middle;
+}
+header .logo span:nth-child(2) {
+  color: var(--brand4)
+}
+header .logo span:nth-child(3) {
+  color: var(--highlight)
+}
+header .top-area .btnLogin {
+  margin-left: auto;
+  padding: 4px 8px;
+  background: #ccc;
+  font-size: 14px;
+  border-radius: 5px;
+}
+header .top-area .mypage {
+  margin-left: auto;
+}
+header .gnb {
+  background: var(--brand3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+}
+header .gnb a {
+  font-size: 16px;
+  font-weight: 500;
+  color:var(--white);
+  padding: 12px
+  
+}
+header .gnb a.active {
+  background: var(--brand4);
+}
+header .gnb a:last-child {
+  color: #ffcc00
+}
+/* hero-slide */
+.hero-slide div {
+  margin-bottom: 30px;
+  height: 28vh;
+  overflow: hidden;
+}
+.hero-slide div img {
+  max-width: 100%;
+}
+
+/* 공통 */
+.contents {
+  background-color: var(--bg-base);
+}
+section {
+  position: relative;
+  height: 100%;
+  padding: 30px 20px;
+}
+section .title-area small {
+  display: block;
+  margin-bottom: 20px;
+}
+section h2 {
+  display: inline-block;
+  padding: 4px 15px;
+  border-radius: 30px;
+  background: var(--highlight);
+  color: var(--bg-base);
+  font-family: var(--font-h2);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+section .text {
+  line-height: 1.4;
+  letter-spacing: -1px;
+  font-size: 17px;
+  word-break: keep-all;
+  color: var(--color-base);
+  margin-bottom: 10px;
+}
+.btn-area {text-align: center;}
+.btn {
+  padding: 4px;
+  background: #cdcdcd;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.btn.primary {
+  background: var(--brand3);
+  color: var(--bg-base)
+}
+/* Home-intro */
+.intro-text {margin-bottom: 40px;}
+.intro-text h1  {
+  margin-bottom: 15px;
+}
+.intro-text h1 span {
+  display: block;
+  font-size: 24px;
+  font-family: var(--font-h2);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+.intro-text .text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home - card-list */
+.card-list .card {
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.card-list .card figure {
+  height: 24vh;
+  overflow: hidden;
+}
+.card-list .card img {
+  max-width: 100%;
+}
+.card-list .recom-text {
+  background: #fff;
+  padding: 20px;
+}
+.card-list .recom-text h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card-list .recom-text .info {margin-bottom: 20px;}
+.card-list .recom-text .info span {
+  padding: 5px 8px;
+  border-radius: 10px;
+  background: var(--brand2);
+  font-size: 15px;
+  color: var(--bg-base);
+  margin-right: 5px;
+}
+.card-list .recom-text .info span:nth-child(2) {
+  background: var(--brand1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* tips */
+.react-tabs div[role="tabpanel"] {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 25px 20px;
+  background: #fff;
+}
+.react-tabs div .text {
+  margin-bottom: 25px;
+}
+.react-tabs div em {
+  font-weight: 500;
+  color: var(--brand1);
+}
+.react-tabs div h3 {
+  font-weight: 500;
+}
+.react-tabs div h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.react-tabs div dl dt {
+  color: var(--brand2);
+  border-left: 4px solid var(--brand2);
+  line-height: 1;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.react-tabs div dl div {
+  margin-bottom: 25px;
+  padding: 15px 0;
+  border-bottom: 2px dotted var(--brand2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* about */
+.about-wrap em {
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  color: var(--highlight);
+  font-family: var(--font-h2);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-wrap .text {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.about-wrap strong {
+  color: var(--brand3);
+}
+.about-mov video {
+  max-width: 100%;  
+}
+.slogan-area {
+  margin-bottom: 40px;
+}
+.text-area {
+  margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.site-footer {
+  padding: 20px 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
 }
