@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/healthyfood/static/css/main.3d4b6747.css",
+    "main.js": "/healthyfood/static/js/main.784ef45a.js",
+    "static/js/453.885c75ee.chunk.js": "/healthyfood/static/js/453.885c75ee.chunk.js",
+    "static/media/about_mov01.mp4": "/healthyfood/static/media/about_mov01.a517720efb4eaa0f9594.mp4",
+    "static/media/logo3.png": "/healthyfood/static/media/logo3.83bb3ddcc381e81fdf0c.png",
+    "static/media/revicons.eot": "/healthyfood/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/healthyfood/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/healthyfood/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/healthyfood/index.html",
+    "main.3d4b6747.css.map": "/healthyfood/static/css/main.3d4b6747.css.map",
+    "main.784ef45a.js.map": "/healthyfood/static/js/main.784ef45a.js.map",
+    "453.885c75ee.chunk.js.map": "/healthyfood/static/js/453.885c75ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d4b6747.css",
+    "static/js/main.784ef45a.js"
+  ]
+}
