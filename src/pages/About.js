@@ -1,11 +1,11 @@
 import React from 'react';
-import aboutMovie from '../assets/about-bg.mp4'
+import aboutMovie from '../assets/about_mov01.mp4'
 
 const About = () => {
   return (
     <div className='about-wrap'>
       <div className="about-mov">
-        <video src={aboutMovie} autoPlay loop muted></video>
+        <video src={aboutMovie} autoPlay loop muted preload='auto' playsInline></video>
       </div>
       <section className="contents">
         <div className="slogan-area">
@@ -27,7 +27,7 @@ const About = () => {
         <div className="story-2">
           <h2>🚀 우리의 비전</h2>
           <div className="text-area">
-            <p className='text'><strong>““작은 한 끼가 큰 변화를 만든다.”</strong></p>
+            <p className='text'><strong>“작은 한 끼가 큰 변화를 만든다.”</strong></p>
           </div>
           <div className="text-area">
             <p className="text">mealLight는 단순히 식단을 기록하고 분석하는 앱이 아닙니다.</p>

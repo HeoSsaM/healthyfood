@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MealCard from '../component/MealCard';
+import RecomCard from '../component/RecomCard';
 
 const Meals = () => {
   const [all, setAll] = useState([]); //전체 데이터상태
@@ -24,7 +25,7 @@ const Meals = () => {
 
       <div className="card-list">
         {visible.map((item) => (
-          <MealCard key={item.id} item={item} />
+          <RecomCard key={item.id} item={item} />
         ))}
       </div>
 
